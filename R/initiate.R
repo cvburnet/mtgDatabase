@@ -15,6 +15,9 @@ library(stringr)
 if(!require("jsonlite")) install.packages("jsonlite")
 library(jsonlite)
 
+if(!require("dplyr")) install.packages("dplyr")
+library(dplyr)
+
 # Next, setting the working directory to /R/
 this.path::here() |>
   str_sub(end = -3L) |>
