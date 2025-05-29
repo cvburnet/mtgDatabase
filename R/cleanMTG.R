@@ -37,3 +37,4 @@ tidy_dat$prices$eur_foil <- NULL
 tidy_dat$prices$tix <- NULL
 tidy_dat$related_uris <- NULL
 tidy_dat$purchase_uris <- NULL
+

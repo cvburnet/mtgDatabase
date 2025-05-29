@@ -1,5 +1,5 @@
 # initiate will function as a wrapper that launches all required packages for
-# diamond-control-room, then will set a working directory for the project.
+# mtgDatabase, then will set a working directory for the project.
 
 # First, installing the required packages needed for this project, if they are 
 # not previously installed. Launches each package.
