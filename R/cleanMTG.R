@@ -38,3 +38,4 @@ tidy_dat$prices$tix <- NULL
 tidy_dat$related_uris <- NULL
 tidy_dat$purchase_uris <- NULL
 
+save(tidy_dat, file = "./output/data.Rda")
