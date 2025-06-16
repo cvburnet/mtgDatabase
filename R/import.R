@@ -1,1 +1,1 @@
-cards <- read.csv(file = "./input/cards.csv")
+all_cards <- read.csv(file = "./input/cards.csv")
