@@ -5,3 +5,6 @@
 
 all_cards <- read.csv(file = "./input/cards.csv")
 save(all_cards, file = "./output/all_cards.Rda")
+
+card_prices <- read.csv(file = "./input/cardPrices.csv")
+save(card_prices, file = "./output/card_prices.Rda")
