@@ -8,3 +8,6 @@ save(all_cards, file = "./output/all_cards.Rda")
 
 card_prices <- read.csv(file = "./input/cardPrices.csv")
 save(card_prices, file = "./output/card_prices.Rda")
+
+set_info <- read.csv(file = "./input/sets.csv")
+save(set_info, file = "./output/set_info.Rda")

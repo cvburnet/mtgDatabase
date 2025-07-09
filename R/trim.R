@@ -1,5 +1,6 @@
 load("./output/all_cards.Rda")
 load("./output/card_prices.Rda")
+load("./output/set_info.csv")
 
 # Inclusion Criteria: 
 # 1.) Must be printed on paper, and not oversized. (isOnlineOnly, isOversized)
@@ -33,14 +34,15 @@ card_prices <- card_prices |>
   select(uuid,cardFinish,date,price)
 
 
-# Finding unique card names
+# Finding unique card names...
 unique_cards <- my_cards[which(!duplicated(my_cards$name)),]
-unique_cards2 <- my_cards |>
-  filter(isReprint == "" & isAlternative == "" & isFullArt == "")
 
-# Grabbing legendary cards
-legend_index <- (my_cards$supertypes == "Legendary")
-legend_cards <- my_cards[legend_index,]
+# Identifying commanders...
+commanders <- unique_cards |>
+  filter(
+    str_detect(type, "Legendary") & 
+      (str_detect(type, "Creature") | str_detect(type, "Vehicle"))
+    ) 
 
 # Pondering...
 ponder <- my_cards |>

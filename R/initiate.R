@@ -12,9 +12,6 @@ library(tidyverse)
 if(!require("stringr")) install.packages("stringr")
 library(stringr)
 
-if(!require("jsonlite")) install.packages("jsonlite")
-library(jsonlite)
-
 if(!require("dplyr")) install.packages("dplyr")
 library(dplyr)
 
